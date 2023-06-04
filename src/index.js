@@ -32,7 +32,7 @@ function addMarkup(event) {
 }
 function createCardCat(cat) {
     const {description, name, temperament} = cat[0].breeds[0];
-    const markup = `<img scr="${cat[0].url}" alt="${name}" width="300"/>
+    const markup = `<img src="${cat[0].url}" alt="${name}" width="300"/>
     <div class="wrap"><h1>${name}</h1><p>${description}</p><p><b>Temperament: </b>${temperament}</p></div>`
     catInfo.innerHTML = markup
 }
